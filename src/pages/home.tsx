@@ -6,7 +6,7 @@ import Footer from "../components/footer"
 
 function Home() {
 
-    const jmlhCard = 4
+    const jmlhCard = [1, 2, 3, 4]
 
     return (
         <>
@@ -19,7 +19,7 @@ function Home() {
                             <Banner />
                             <div className="flex flex-wrap  justify-center items-center pb-14 md:pb-20">
                                 <CardPersegiPanjang />
-                                {[...Array(jmlhCard)].map((_, index) => (
+                                {jmlhCard.map((data, index) => (
                                     <CardKecilHome key={index} />
                                 ))}
                             </div>
@@ -27,7 +27,7 @@ function Home() {
                     </div>
                     <h1 className="py-[50px] lg:py-[100px] text-center font-bold text-[14px] md:text-[24px] lg:text-[40px]">PILIHLAH CALON PRESIDEN MENTOR DARI REKAM JEJAK <br /> YANG JELAS PASTIKAN MEREKA TIDAK MEMILIKI VISI <br /> MISI UNTUK MELEGALKAN SLOT</h1>
                 </main>
-                
+
                 <Footer />
             </div>
         </>
