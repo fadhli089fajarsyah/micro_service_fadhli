@@ -5,6 +5,7 @@ import Login from "./pages/login";
 import Regrister from "./pages/regrister";
 import Add_paslon from "./pages/add_paslon";
 import Add_Partai from "./pages/add_partai";
+import Dasboard from "./pages/dasboard";
 function App() {
 
 
@@ -16,7 +17,8 @@ function App() {
       {/* <Login /> */}
       {/* <Regrister/> */}
       {/* <Add_Partai /> */}
-      
+      <Dasboard />
+
     </>
   )
 }
