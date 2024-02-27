@@ -16,7 +16,7 @@ const Card_dasboard: React.FC<classT> = (props) => {
 
                     </div>
 
-                    <h1 className="text-[#5E5A00] font-extrabold sh_text lg:text-[40px] mt-2">SURYA SURYA</h1>
+                    <h1 className="text-[#5E5A00] font-extrabold sh_text lg:text-[30px] mt-2">SURYA SURYA</h1>
                     <h4 className="font-semibold text-[#5E5A00] sh_text ">Akumulasi :45%</h4>
                     <h4 className="font-semibold text-[#5E5A00] sh_text ">Jumlah Vote : 117 Voters</h4>
 

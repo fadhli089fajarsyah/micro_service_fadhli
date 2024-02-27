@@ -1,0 +1,20 @@
+[
+    {
+        "id":"1",
+        "latarCustom": "bg-[#FF6384] shadow-[0px_11px_11px_-4px_#CC5B5B]",
+        "kotakCustom": "bg-[#5E0000]",
+        "textCustom": "text-[#5E0000]"
+    },
+    {
+        "id":"2",
+        "latarCustom": "bg-[#FFCD56] shadow-[0px_11px_11px_-4px_#CACC5B]",
+        "kotakCustom": "bg-[#5E5400]",
+        "textCustom": "text-[#5E5400]"
+    },
+    {
+        "id":"3",
+        "latarCustom": "bg-[#36A2EB] shadow-[0px_11px_11px_-4px_#5BCCBE80]",
+        "kotakCustom": "bg-[#005E4D]",
+        "textCustom": "text-[#005E4D]"
+    }
+]
