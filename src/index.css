@@ -43,3 +43,33 @@ background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
 -moz-box-shadow: 0px 11px 11px -4px rgba(255, 99, 132, 0.47);
 box-shadow: 0px 11px 11px -4px rgba(255, 99, 132, 0.47);
 }
+.bg1{
+  background-color: #FF6384;
+}
+.bk1{
+  background-color: #5E0000;
+}
+.bt1{
+  color: #5E0000;
+}
+
+.bg2{
+  background-color: #FFCD56;
+}
+.bk2{
+  background-color: #5E5400;
+}
+.bt2{
+  color: #5E5400;
+}
+
+.bg3{
+  background-color: #36A2EB;
+}
+.bk3{
+  background-color: #005E4D;
+}
+.bt3{
+  color: #005E4D;
+}
+

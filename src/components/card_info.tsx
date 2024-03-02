@@ -1,13 +1,14 @@
 
 
-interface cl{
+interface cl {
     id: string | number;
-    latar: string;
-    kotakNo: string;
-    textPaslon: string;
+    latar: string | number;
+    kotakNo: string | number;
+    textPaslon: string | number;
+    persen: string | number;
 }
 
-const CardInfo: React.FC<cl>= (props) => {
+const CardInfo: React.FC<cl> = (props) => {
 
     return (
         <div className={`flex w-[657px]   ${props.latar} p-5 rounded-xl sd-xl mb-10`}>
@@ -18,7 +19,7 @@ const CardInfo: React.FC<cl>= (props) => {
             </div>
             <div className="ml-5 font-bold flex flex-col justify-center">
                 <h1 className={`text-[40px] sh_text_info ${props.textPaslon}`}>CINTARA SURYA PALOH</h1>
-                <h1 className={`text-[36px] sh_text_info  ${props.textPaslon}`}>78%</h1>
+                <h1 className={`text-[36px] sh_text_info  ${props.textPaslon}`}>{props.persen}</h1>
             </div>
         </div>
     )

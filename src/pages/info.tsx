@@ -4,27 +4,39 @@ import Judul from "../components/judul"
 import CardInfo from "../components/card_info"
 import SlideCard from "../components/slide_card"
 import dataDumy from "../assets/data/data_data.json"
+import ReactApexChart from 'react-apexcharts'
+import { ApexOptions } from 'apexcharts'
 
 
 function Info() {
+    const series: number[] = [75, 25, 45];
 
-
-
+    const options: ApexOptions = {
+        chart: {
+            width: 100,
+            type: 'pie',
+        },
+        colors: ['#FF6384', '#36A2EB', '#FFCD56'],
+        responsive: [{
+            breakpoint: 480,
+        }]
+    }
     return (
         <>
             <div>
                 <Navbar />
 
                 <main className="pt-[60px] lg:pt-[65px] ">
-                    <Judul text="INFO PEMILU TERUPDATE" warna="flex justify-center items-center text-[#5E5400]" />
+                    <Judul text="INFO PEMILU TERUPDATE" warna="flex justify-center text-center items-center text-[#5E5400]" />
                     <div className="flex w-full justify-center items-center">
-                        <div>
+                        <div className="flex flex-col justify-center items-center text-center">
                             <h1 className="font-bold text-[40px] ">HASIL :</h1>
+                            <ReactApexChart options={options} series={series} type="pie" width={470} />
+
                         </div>
                         <div>
-                            {dataDumy.map((data) => (
-                                <CardInfo key={data.id} id={data.id} latar={data.latarCustom} kotakNo={data.kotakCustom} textPaslon={data.textCustom} />
-
+                            {dataDumy.map((data, index) => (
+                                <CardInfo key={index} id={data.id} persen={data.persen} latar={data.latarCustom} kotakNo={data.kotakCustom} textPaslon={data.textCustom} />
                             ))}
                             <h1 className="text-[32px] text-[#FF0000] font-extrabold pb-14">ANDA SUDAH MEMILIH !!!!</h1>
                         </div>
@@ -49,51 +61,3 @@ function Info() {
 }
 
 export default Info
-
-
-
-// import React, { useState } from 'react';
-
-// const Slide = () => {
-//     // Data slide dalam bentuk array objek
-//     const slidesData = [
-//         {
-
-//             content: 'Content of Slide 1',
-//         },
-//         {
-
-//             content: 'Content of Slide 2',
-//         },
-//         {
-
-//             content: 'Content of Slide 3',
-//         },
-
-//     ];
-
-//     // State untuk menyimpan indeks slide yang sedang aktif
-//     const [activeIndex, setActiveIndex] = useState(0);
-
-//     // Fungsi untuk menampilkan slide berikutnya
-//     const nextSlide = () => {
-//         setActiveIndex((prevIndex) => (prevIndex === slidesData.length - 1 ? 0 : prevIndex + 1));
-//     };
-
-//     // Fungsi untuk menampilkan slide sebelumnya
-//     const prevSlide = () => {
-//         setActiveIndex((prevIndex) => (prevIndex === 0 ? slidesData.length - 1 : prevIndex - 1));
-//     };
-
-//     return (
-//         <div className="slide-container">
-//             <button onClick={prevSlide}>Previous</button>
-//             <div className="slide">
-//                 <p>{slidesData[activeIndex].content}</p>
-//             </div>
-//             <button onClick={nextSlide}>Next</button>
-//         </div>
-//     );
-// };
-
-// export default Slide;
