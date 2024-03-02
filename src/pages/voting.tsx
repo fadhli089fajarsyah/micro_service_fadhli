@@ -22,8 +22,8 @@ function Voting() {
                             ))}
                         </div>
                         <div className="flex justify-between px-14">
-                            <Btn tipe="submit" text="RESET" color="border-[#5E5A00] font-bold text-[#5E5A00]" />
-                            <Btn tipe="submit" text="SUMBIT" color="border-[#5E5A00] font-bold bg-[#5E5A00] text-white" />
+                            <Btn  text="RESET" color="border-[#5E5A00] font-bold text-[#5E5A00]" />
+                            <Btn  text="SUMBIT" color="border-[#5E5A00] font-bold bg-[#5E5A00] text-white" />
                         </div>
                     </div>
                 </main>

@@ -25,7 +25,7 @@ function Navbar() {
                     {login ? (
                         <h1 className='bg-white text-black rounded-full p-1 px-3' onClick={handleLogin} >Y</h1>
                     ) : (
-                        <a href='login' onClick={handleLogin} className='text-[15px] lg:text-[20px] bg-white text-black font-bold rounded px-2 py-1 md:px-3 md:py-01 lg:px-6 text-center items-center flex'>Login</a>
+                        <a href='/' onClick={handleLogin} className='text-[15px] lg:text-[20px] bg-white text-black font-bold rounded px-2 py-1 md:px-3 md:py-01 lg:px-6 text-center items-center flex'>Login</a>
                     )}
                 </div>
             </nav>
