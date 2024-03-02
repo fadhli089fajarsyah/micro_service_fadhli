@@ -6,10 +6,10 @@ import React, { useState } from "react";
 
 interface LoginProps {
     data: (data: { username: string; password: string }) => void;
-  }
-  
+}
 
-const Login: React.FC<LoginProps> = ({ data })  => {
+
+const Login: React.FC<LoginProps> = ({ data }) => {
 
     const [formData, setFormData] = useState({ username: "", password: "" });
     const [submittedData, setSubmittedData] = useState<any>(null)
@@ -22,21 +22,21 @@ const Login: React.FC<LoginProps> = ({ data })  => {
     };
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
-        event.preventDefault(); 
+        event.preventDefault();
         setSubmittedData(formData);
         data(formData);
-        setFormData({ username: "", password: "" }); 
+        setFormData({ username: "", password: "" });
         setFormData(formData)
     };
 
-    
+
 
     return (
         <div className="">
             <Navbar />
 
             <main className="pt-[60px] lg:pt-[65px] flex justify-center  bg-gray-200">
-                <form onSubmit={handleSubmit}  className="md:w-[589px] flex flex-col bg-white items-center px-10 md:px-0 my-10 rounded-xl py-14">
+                <form onSubmit={handleSubmit} className="md:w-[589px] flex flex-col bg-white items-center px-10 md:px-0 my-10 rounded-xl py-14">
                     <Judul warna="text-[#5E5400]" text="LOGIN" />
                     <div className="flex flex-col pb-10">
                         <label

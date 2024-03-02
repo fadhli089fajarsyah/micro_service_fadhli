@@ -22,7 +22,7 @@ const App: React.FC = () => {
     setLoginFormData(data)
     if (data.username === "admin" && data.password === "admin") {
       setIsLoggedInAdmin(true);
-      setIsLoggedIn(false); 
+      setIsLoggedIn(false);
     } else if (data.username === "user" && data.password === "user") {
       setIsLoggedIn(true);
       setIsLoggedInAdmin(false);
@@ -34,14 +34,14 @@ const App: React.FC = () => {
   };
 
 
-console.log(loginFormData)
+  console.log(loginFormData)
   console.log(isLoggedIn, "ini user");
   console.log(isLoggedInAdmin, "ini admin");
 
   return (
     <>
       <BrowserRouter>
-        
+
         {isLoggedIn ? (
           <Navigate to="/home" />
         ) : (
@@ -53,7 +53,10 @@ console.log(loginFormData)
 
         {isLoggedIn && (
           <Routes>
-            <Route path="/home" element={<Home />} />
+            <Route path="/Home" element={<Home />} />
+            <Route path="/Detail" element={<Detail />} />
+            <Route path="/Voting" element={<Voting />} />
+            <Route path="/Info" element={<Info />} />
           </Routes>
         )}
 
@@ -69,6 +72,11 @@ console.log(loginFormData)
         {isLoggedInAdmin && (
           <Routes>
             <Route path="/dasboard" element={<Dasboard />} />
+            <Route path="/Add_Partai" element={<Add_Partai />} />
+            <Route path="/Add_paslon" element={<Add_paslon />} />
+            <Route path="/Dasboard" element={<Dasboard />} />
+            <Route path="/List_paslon" element={<List_paslon />} />
+            <Route path="/List_partai" element={<List_partai />} />
           </Routes>
         )}
       </BrowserRouter>
