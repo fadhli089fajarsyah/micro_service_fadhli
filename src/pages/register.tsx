@@ -2,7 +2,7 @@ import Judul from "../components/judul"
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import Btn from "../components/btn";
-function Regrister() {
+function Register() {
     return (
         <div className="">
             <Navbar />
@@ -42,4 +42,4 @@ function Regrister() {
     );
 }
 
-export default Regrister;
+export default Register

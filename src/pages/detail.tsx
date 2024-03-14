@@ -12,7 +12,7 @@ function Detail() {
                 <main className="pt-[60px] lg:pt-[65px] flex justify-center  bg-gray-200">
                     <div className="w-[90%] px-10 text-center lg:text-[24px]  bg-white">
                         <div className="flex h-16 items-center justify-between md:justify-start">
-                            <a href="" className="lg:w-[42%] md:w-[38%] flex md:justify-start"> ⭠ Beranda</a>
+                            <a href="/" className="lg:w-[42%] md:w-[38%] flex md:justify-start"> ⭠ Beranda</a>
                             <h5 className="lg:w-[50%] flex md:justify-start">BERITA HARI INI</h5>
                         </div>
                         <div className="">
