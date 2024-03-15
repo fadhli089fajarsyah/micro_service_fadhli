@@ -43,9 +43,9 @@ const Register: React.FC = () => {
             if (response) {
                 console.log("User berasil")
                 window.location.reload()
-                alert("selamat anda telah registrasi silakan login" )
+                alert("selamat anda telah registrasi silakan login")
             } else {
-            alert("gagal")
+                alert("gagal")
             }
         } catch (error) {
             console.error("Error:", error)
@@ -70,7 +70,7 @@ const Register: React.FC = () => {
                             Fullname
                         </label>
                         <input
-                        required
+                            required
                             id="nama_user"
                             name="nama_user"
                             value={formData.nama_user}
@@ -86,7 +86,7 @@ const Register: React.FC = () => {
                             Alamat
                         </label>
                         <input
-                        required
+                            required
                             id="alamat_user"
                             name="alamat_user"
                             value={formData.alamat_user}
@@ -102,7 +102,7 @@ const Register: React.FC = () => {
                             Jenis Kelamin
                         </label>
                         <input
-                        required
+                            required
                             id="jenis_kelamin_user"
                             name="jenis_kelamin_user"
                             value={formData.jenis_kelamin_user}
@@ -119,7 +119,7 @@ const Register: React.FC = () => {
                             Username
                         </label>
                         <input
-                        required
+                            required
                             id="username_user"
                             name="username_user"
                             value={formData.username_user}
@@ -135,7 +135,7 @@ const Register: React.FC = () => {
                             className=" text-[#5E5400] font-bold text-[24px]">Password
                         </label>
                         <input
-                        required
+                            required
                             id="password_user"
                             name="password_user"
                             value={formData.password_user}
@@ -149,7 +149,7 @@ const Register: React.FC = () => {
                     </button>
                     <div className="flex py-[20px]">
                         <p className="text-[#595959]">Belum memiliki akun ?</p>
-                        <a href="" className="text-[#0092A6] underline underline-offset-4 "> Register</a>
+                        <a href="/login" className="text-[#0092A6] underline underline-offset-4 "> login</a>
                     </div>
                 </form>
             </main>

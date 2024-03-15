@@ -19,7 +19,7 @@ function Home() {
                             <Banner />
                             <div className="flex flex-wrap  justify-center items-center pb-14 md:pb-20">
                                 <CardPersegiPanjang />
-                                {jmlhCard.map((data, index) => (
+                                {jmlhCard.map(( index) => (
                                     <CardKecilHome key={index} />
                                 ))}
                             </div>
