@@ -38,9 +38,9 @@ const App: React.FC = () => {
           <Route path="/detail" element={<Detail />} />
           <Route path="/admin" element={<Dashboard />} />
           <Route path="/paslon" element={<List_paslon />} />
-          <Route path="/add-paslon" element={<Add_paslon />} />
+          <Route path="/add_paslon" element={<Add_paslon />} />
           <Route path="/partai" element={<List_partai />} />
-          <Route path="/add-partai" element={<Add_Partai />} />
+          <Route path="/add_partai" element={<Add_Partai />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/info" element={<Info />} />
