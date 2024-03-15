@@ -9,10 +9,25 @@ import Dashboard from "./pages/dasboard";
 import List_paslon from "./pages/list_paslon";
 import List_partai from "./pages/list_partai";
 import Info from "./pages/info";
+import { useState, useEffect } from "react";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App: React.FC = () => {
+
+  const findpartai = async ()=> {
+    try {
+      const response = await fetch("http://localhost:5000/api/partais")
+
+      console.log(await response.json());
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  useEffect(() => {
+    findpartai()
+  }, [])
 
   return (
     <>
